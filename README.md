@@ -13,7 +13,7 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 
   - All Forms
    
-   ## ttings
+  - Settings
       
 |Name                   | Type           | Required            | Default Value       | Description         |
 |-----------------------|----------------|---------------------|---------------------|---------------------|
