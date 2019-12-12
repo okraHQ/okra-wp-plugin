@@ -11,7 +11,7 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 
 3. The menu `Okra` would appear on the side menu, with the menus **All Forms**, **Settings**, **Styles**, **Payment Integration**.
 
-  - All Forms
+  - **All Forms**
    
   - Settings
       
