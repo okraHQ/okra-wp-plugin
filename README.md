@@ -9,9 +9,9 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
    
 2. Go to `Plugins > Add New` and search for the okra plugin, if you have pulled and zipped the repo click on the `upload button` at the top of the page, select the zipped repo and click `install now`.
 
-3. The menu `Okra` would appear on the side menu, with the menus `All Forms`, `Settings`, `Styles`, `Payment Integration`
+3. The menu `Okra` would appear on the side menu, with the menus **All Forms**, **Settings**, **Styles**, **Payment Integration**.
 
-   ** rms **
+  - All Forms
    
    ## ttings
       
