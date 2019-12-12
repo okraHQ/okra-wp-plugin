@@ -26,7 +26,7 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
   
   - **Payment Integration**
 
-4. 
+4. Add the form element created in `All forms` as an element in the wordpress page created.
 
 
 ## Documentation
