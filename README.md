@@ -13,7 +13,7 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 
   - **All Forms**
    
-  - Settings
+  - **Settings**
       
 |Name                   | Type           | Required            | Default Value       | Description         |
 |-----------------------|----------------|---------------------|---------------------|---------------------|
@@ -21,6 +21,10 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 |  `token`              | `String`       | true                |  undefined          | Your pubic Key from okra. Use test key for test mode and live key for live mode
 |  `env`                | `Enums.Environment`| true            |  undefined          | 
 |  `clientName`         | `String`       | true                |  undefined          | Name of the customer using the widget on the application    
+
+  - **Styles**
+  
+  - **Payment Integration**
 
 4. 
 
