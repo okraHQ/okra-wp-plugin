@@ -34,6 +34,7 @@ This allows you to create various instances of an element that when clicked, wou
   - **Payment Integration**
 
 4. Add the form element created in `All forms` as an element in the wordpress page created.
+  ![style page](https://i.imgur.com/B2FJh6a.gif)
 
 
 ## Documentation
