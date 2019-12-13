@@ -27,7 +27,7 @@ This allows you to create various instances of an element that when clicked, wou
 
   - **Styles** <br />
   This is used to style the okra widget to your taste:
-  ![style page](https://i.imgur.com/mtVUZ89.png)
+  ![style page](https://i.imgur.com/J0l7QXA.png)
   
   
   - **Payment Integration**
