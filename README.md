@@ -12,6 +12,11 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 3. The menu `Okra` would appear on the side menu, with the menus **All Forms**, **Settings**, **Styles**, **Payment Integration**.
 
   - **All Forms**
+  This allows you to create various instances of an element that when clicked, would call the okra widget.
+  
+ <img src="https://ibb.co/FXrn57q"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
    
   - **Settings**
       
