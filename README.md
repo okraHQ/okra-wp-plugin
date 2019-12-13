@@ -14,7 +14,7 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
   - **All Forms** <br />
 This allows you to create various instances of an element that when clicked, would call the okra widget.
  
- ![stack Overflow](https://i.imgur.com/mtVUZ89.png)
+ ![All forms page](https://i.imgur.com/mtVUZ89.png)
    
   - **Settings**
       
@@ -25,7 +25,10 @@ This allows you to create various instances of an element that when clicked, wou
 |  `env`                | `Enums.Environment`| true            |  undefined          | 
 |  `clientName`         | `String`       | true                |  undefined          | Name of the customer using the widget on the application    
 
-  - **Styles**
+  - **Styles** <br />
+  This is used to style the okra widget to your taste:
+  ![style page](https://i.imgur.com/mtVUZ89.png)
+  
   
   - **Payment Integration**
 
