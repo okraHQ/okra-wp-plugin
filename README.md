@@ -17,6 +17,7 @@ This allows you to create various instances of an element that when clicked, wou
  ![All forms page](https://i.imgur.com/mtVUZ89.png)
    
   - **Settings**
+  ![All forms page](https://i.imgur.com/0wcOiew.png)
       
 |Name                   | Type           | Required            | Default Value       | Description         |
 |-----------------------|----------------|---------------------|---------------------|---------------------|
