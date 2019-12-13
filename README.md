@@ -14,9 +14,7 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
   - **All Forms**
   This allows you to create various instances of an element that when clicked, would call the okra widget.
   
- <img src="https://ibb.co/FXrn57q"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+ <a href="https://ibb.co/FXrn57q"><img src="https://i.ibb.co/bF07sdR/okra-allforms.png" alt="okra-allforms" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
    
   - **Settings**
       
