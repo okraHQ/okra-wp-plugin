@@ -1,4 +1,4 @@
-# okra-wp-plugin
+# okra-wordpress-plugin
 
 Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse the source, look at open issues and keep track of development. 
 
