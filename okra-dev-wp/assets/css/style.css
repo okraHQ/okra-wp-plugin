@@ -1,0 +1,200 @@
+body{
+    background: #f1f1f1;
+}
+
+.back-primary,
+.back-primary:hover{
+    border: 0;
+    background-color: #3ab795;
+}
+
+.color-primary{
+    color: #3ab795;
+}
+
+.no-report {
+    font-size: 20px;
+}
+
+.white-header{
+    display: block;
+    width: 100%;
+    background: #3ab795;
+    margin-top: 20px;
+}
+
+.white-header .fifthinsightlogo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.large{
+    font-size: 18px;
+}
+
+.xlarge{
+    font-size: 25px;
+}
+
+.ft-small{
+    font-size: 12px;
+}
+
+.height-100{
+    height: 60vh;
+}
+
+.btn-group .btn{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16); 
+}
+
+.btn-rounded{
+    border-radius: 15px;
+}
+
+
+.center-btn-width{
+    width: 250px;
+    background-color: #3ab795;
+    border-radius: 20px;
+    padding: 15px 25px;
+    color: #fff;
+}
+
+.center-btn-width2{
+    background-color: #3ab795;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.center-btn-width:hover, .center-btn-width2:hover{
+    color: #fff;
+}
+
+.logo{
+    width: 186px;
+    margin: 0 auto;
+}
+
+.nav-bottom{
+    border-top: 1px solid #CACAD1;
+    border-bottom: 1px solid #CACAD1;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.vs{
+    font-size: 50px;
+    color: #aeaeae;
+    font-weight: bold
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.active-nav{
+    display: block;
+    position: relative;
+    background: #fff;
+    width: 70px;
+    height: 3px;
+    transform: translateY(8px);
+    margin: 0 auto;
+}
+
+.shift-10{
+    transform: translateY(6px);
+}
+
+.card{
+    width: 100%;
+}
+
+.report-compare{
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.list-group-item{
+    border: 0;
+    border-bottom: 1px solid #707070;
+    background: transparent;
+}
+
+.list-group-item:nth-child(5){
+    border: 0;
+}
+
+.api-form{
+    padding: 15px 25px;
+    width: 400px;
+    height: 65px;
+    border-radius: 20px;
+}
+
+.bg-success {
+    background-color: #00AF14;
+}
+
+input[type=text], input[type=text]:focus{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+textarea {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.navbar {
+    background-color: #3ab795!important; 
+}
+.nav-link {
+    color: #fff!important;
+    transition: 0.2s;
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+
+.nav-link:hover {
+    color: #fff!important;
+}
+
+.logo {
+    margin-top: 15px 
+}
+
+.btn-primary {
+    background-color: #3ab795!important;
+    padding: 10px 25px;
+    border: none;
+}
+
+thead th{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #707070; 
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #707070; 
+}
+input {
+    border:2px solid #000
+}
