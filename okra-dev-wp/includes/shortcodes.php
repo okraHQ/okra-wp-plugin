@@ -38,14 +38,48 @@
 			$output = "
 				
 				<div id='okra-enabled'>
-					<head>
-						<script src='https://dev-cdn.okra.ng/okra.min.js'></script>
- 						<link rel='stylesheet' href='https://dev-cdn.okra.ng/okra.min.css' media='all' />
 
-					</head> 
+										
 					<button class='okra'>". $attr["btn-text"] ."</button>
- 					
- 					<script type='text/javascript'>
+						
+					 <script type='text/javascript'>
+
+					 window.document.head.insertAdjacentHTML('beforeend', `<style>svg, img, embed, object {display: initial; height: auto; max-width: 100%;}</style>`);
+
+					 
+					 const link = document.createElement('link');
+					 link.rel = 'stylesheet';
+					 link.type = 'text/css';
+					 link.href = 'https://cdn.okra.ng/okra.css';
+					 document.head.appendChild(link);
+					 const script = document.createElement('script');
+					 script.src = 'https://cdn.okra.ng/okra.min.js';
+					 document.getElementsByTagName('head')[0].appendChild(script);
+
+					 var client;
+
+					 link.onload = function () {
+						window.document.head.insertAdjacentHTML('beforeend', `<style> #okra-enabled {position: initial;}</style>`);
+					};
+
+
+					 if (script.readyState) {
+						// IE
+						script.onreadystatechange = () => {
+						  if (
+							script.readyState === 'loaded' ||
+							script.readyState === 'complete'
+						  ) {
+							client = new window.okra.create();
+							script.onreadystatechange = null;
+							
+						  }
+						};
+					  } else {
+						script.onload = () => {
+							client = new window.okra.create();
+						};
+					  }
 
 					    /**
 					    * SIMPLE OKRA MODAL
@@ -55,19 +89,22 @@
 					        env: '". $settings->env ."', 
 					        clientName: '". $settings->clientName ."', //TODO use this somehow with the button
 					        key: '". $settings->key ."',
-					        token: '". $settings->token ."',
-					        user: {
-					            first_name: 'Bayo',
-					            last_name: 'Thomas',
-					            middle_name: 'Peter', // optional
-					            email: 'bayo@okra.ng',
-					            bvn: '00123456789', //optional
-					            bank: 'okra-plc', //optional
-					            accounts: ['0123456789'] 
-					        },
+							token: '". $settings->token ."',
+							source: 'wordpress',
+					        options: {
+								user: {
+									first_name: '',
+									last_name: '',
+									middle_name: '', // optional
+									email: '',
+									bvn: '', //optional
+									bank: '', //optional
+									accounts: [] 
+								},
+							},
 					        products: ". json_encode($products_array) .",
 					        onClose: function() {
-					            ". $modal->onClose ."
+					            
 					        },
 					        onOpen: function() {
 					      		". $modal->onOpen ."
@@ -86,9 +123,9 @@
 					        }
 					    }
 					
-					    var client = new okra.create();
 						var btn = document.querySelector('.okra');
 						btn.addEventListener('click', function(){
+							console.log(options);
 							client.open(options);
 						});
 						
@@ -99,7 +136,4 @@
 
 			return $output;
 		}
-
-//
-
 	}
