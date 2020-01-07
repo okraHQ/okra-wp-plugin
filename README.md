@@ -1,4 +1,4 @@
-# okra-wp-plugin
+# okra-wordpress-plugin
 
 Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse the source, look at open issues and keep track of development. 
 
@@ -17,7 +17,7 @@ This allows you to create various instances of an element that when clicked, wou
  ![All forms page](https://i.imgur.com/mtVUZ89.png)
    
   - **Settings**
-  ![All forms page](https://i.imgur.com/0wcOiew.png)
+ ![All forms page](https://i.imgur.com/0wcOiew.png)
       
 |Name                   | Type           | Required            | Default Value       | Description         |
 |-----------------------|----------------|---------------------|---------------------|---------------------|
@@ -34,6 +34,7 @@ This allows you to create various instances of an element that when clicked, wou
   - **Payment Integration**
 
 4. Add the form element created in `All forms` as an element in the wordpress page created.
+  ![style page](https://i.imgur.com/B2FJh6a.gif)
 
 
 ## Documentation
