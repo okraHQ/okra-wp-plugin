@@ -58,7 +58,8 @@ function okra_activate_plugin() {
 				`clientName` VARCHAR(255) NOT NULL DEFAULT '',
 				`env` VARCHAR(255) NOT NULL DEFAULT '',
 				`key` VARCHAR(255) NOT NULL DEFAULT '',
-				`token` VARCHAR(255) NOT NULL DEFAULT ''
+				`token` VARCHAR(255) NOT NULL DEFAULT '',
+				`callback_url` VARCHAR(255) NOT NULL DEFAULT ''
 			)
 		";
 	$wpdb->query($query);
@@ -216,16 +217,8 @@ function okra_settings_page() {
 	$navbar = okra_get_navbar(array("", "active-nav", "", ""));
 	$env = array(
 		array(
-			"property" => "Dev",
-			"value" => "dev",
-		),
-		array(
 			"property" => "Sandbox",
-			"value" => "sandbox",
-		),
-		array(
-			"property" => "Staging",
-			"value" => "staging",
+			"value" => "production-sandbox",
 		),
 		array(
 			"property" => "Production",
@@ -237,6 +230,7 @@ function okra_settings_page() {
 	$env_ = '';
 	$key = '';
 	$token = '';
+	$callback_url = '';
 
 	$setting = $wpdb->get_results("SELECT * FROM `" . $wpdb->prefix . "okra_settings`");
 	if (sizeof($setting) > 0) {
@@ -245,6 +239,7 @@ function okra_settings_page() {
 		$env_ = $setting->env;
 		$key = $setting->key;
 		$token = $setting->token;
+		$callback_url = $setting->callback_url;
 	}
 
 	include plugin_dir_path(dirname(__FILE__)) . "front/settings.php";
@@ -394,6 +389,7 @@ function okra_settings_save() {
 		"env" => sanitize_text_field($_POST["env"]),
 		"key" => sanitize_text_field($_POST["key"]),
 		"token" => sanitize_text_field($_POST["token"]),
+		"callback_url" => sanitize_text_field($_POST["callback_url"]),
 	);
 
 	$count = sizeof($wpdb->get_results("SELECT * FROM `" . $wpdb->prefix . "okra_settings`"));
@@ -519,6 +515,7 @@ function okra_settings_update() {
 		"env" => sanitize_text_field($_POST["env"]),
 		"key" => sanitize_text_field($_POST["key"]),
 		"token" => sanitize_text_field($_POST["token"]),
+		"callback_url" => sanitize_text_field($_POST["callback_url"]),
 	);
 
 	$wpdb->update($wpdb->prefix . "okra_settings", $array, array($id = $_POST["id"]));

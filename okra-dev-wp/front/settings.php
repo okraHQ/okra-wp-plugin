@@ -43,6 +43,10 @@
                             <input type="text" id="token" value="<?php echo $token; ?>" name="token" class="form-control" />
                         </div>
 
+                        <div class="form-group">
+                            <label for="callback_url">Callback url</label>
+                            <input type="text" id="callback_url" value="<?php echo $callback_url; ?>" name="callback_url" class="form-control" />
+                        </div>
 
                         <div class="mt-3">
                             <button class="btn btn-primary">Submit</button>

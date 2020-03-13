@@ -90,6 +90,7 @@
 					        clientName: '". $settings->clientName ."', //TODO use this somehow with the button
 					        key: '". $settings->key ."',
 							token: '". $settings->token ."',
+							callback_url: '". $settings->callback_url ."',
 							source: 'wordpress',
 					        options: {
 								user: {
