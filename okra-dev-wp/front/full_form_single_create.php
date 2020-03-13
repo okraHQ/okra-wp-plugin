@@ -24,9 +24,13 @@
 						</select>
 					</div>
 					<div class="mb-2">Products</div>
-					<div class="form-check-inline">
+					<div class="mb-2 form-check-inline">
 						<?php echo $product_checked ?>
 					</div>
+					<div class="mt-3">
+                      <label for="corporate">Corporate</label>
+					  <input type="checkbox" name="corporate" value="corporate" checked>
+                    </div>
 				</div>
 
 				<div class="bg-white card-body mt-4">

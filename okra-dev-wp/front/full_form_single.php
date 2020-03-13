@@ -19,8 +19,12 @@
                         </select>
                     </div>
                     <div class="mb-2">Products</div>
-                    <div class="form-check-inline">
+                    <div class="mb-2 form-check-inline">
 						<?php echo $product_checked ?>
+                    </div>
+                    <div class="mb-2">
+                      <label class="mb-2" for="corporate">Corporate</label>
+					  <input type="checkbox" name="corporate" value="corporate" checked>
                     </div>
                 </div>
 
