@@ -23,6 +23,7 @@
 							?>
 						</select>
 					</div>
+					<span></span>
 					<div class="mb-2">Products</div>
 					<div class="mb-2 form-check-inline">
 						<?php echo $product_checked ?>
