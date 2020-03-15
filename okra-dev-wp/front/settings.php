@@ -50,11 +50,9 @@
 
                         <div class="mt-3">
                         <label for="corporate">Corporate</label>
-					    <input type="checkbox" name="corporate" <?php echo (isset($_POST['corporate'])?"value='corporate'":"value='individual'")?> 
-                        <?php echo (isset($_POST['corporate'])?"checked":"") ?>/>
+					    <input type="checkbox" name="corporate" value="corporate"
+                        <?php echo ($corporate == "corporate" ? "checked":"") ?>/>
                         </div>
-
-            
 
                         <div class="mt-3">
                             <button class="btn btn-primary">Submit</button>

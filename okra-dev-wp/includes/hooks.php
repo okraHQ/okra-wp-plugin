@@ -393,7 +393,7 @@ function okra_settings_save() {
 		"key" => sanitize_text_field($_POST["key"]),
 		"token" => sanitize_text_field($_POST["token"]),
 		"callback_url" => sanitize_text_field($_POST["callback_url"]),
-		"corporate" => sanitize_text_field($_POST["corporate"])
+		"corporate" => sanitize_text_field($_POST["corporate"]) == "corporate" ? "corporate" : "individual"
 	);
 
 	$count = sizeof($wpdb->get_results("SELECT * FROM `" . $wpdb->prefix . "okra_settings`"));
@@ -520,7 +520,7 @@ function okra_settings_update() {
 		"key" => sanitize_text_field($_POST["key"]),
 		"token" => sanitize_text_field($_POST["token"]),
 		"callback_url" => sanitize_text_field($_POST["callback_url"]),
-		"corporate" => sanitize_text_field($_POST["corporate"])
+		"corporate" => sanitize_text_field($_POST["corporate"]) == "corporate" ? "corporate" : "individual"
 	);
 
 	$wpdb->update($wpdb->prefix . "okra_settings", $array, array($id = $_POST["id"]));
