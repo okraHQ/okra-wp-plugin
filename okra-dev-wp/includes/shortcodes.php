@@ -91,6 +91,7 @@
 					        key: '". $settings->key ."',
 							token: '". $settings->token ."',
 							callback_url: '". $settings->callback_url ."',
+							corporate: '". $settings->corporate ."',
 							source: 'wordpress',
 					        options: {
 								user: {

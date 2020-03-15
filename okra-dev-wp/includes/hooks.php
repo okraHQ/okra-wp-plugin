@@ -59,7 +59,8 @@ function okra_activate_plugin() {
 				`env` VARCHAR(255) NOT NULL DEFAULT '',
 				`key` VARCHAR(255) NOT NULL DEFAULT '',
 				`token` VARCHAR(255) NOT NULL DEFAULT '',
-				`callback_url` VARCHAR(255) NOT NULL DEFAULT ''
+				`callback_url` VARCHAR(255) NOT NULL DEFAULT '',
+				`corporate` VARCHAR(255) NOT NULL DEFAULT ''
 			)
 		";
 	$wpdb->query($query);
@@ -231,6 +232,7 @@ function okra_settings_page() {
 	$key = '';
 	$token = '';
 	$callback_url = '';
+	$corporate = '';
 
 	$setting = $wpdb->get_results("SELECT * FROM `" . $wpdb->prefix . "okra_settings`");
 	if (sizeof($setting) > 0) {
@@ -240,6 +242,7 @@ function okra_settings_page() {
 		$key = $setting->key;
 		$token = $setting->token;
 		$callback_url = $setting->callback_url;
+		$corporate = $setting->corporate;
 	}
 
 	include plugin_dir_path(dirname(__FILE__)) . "front/settings.php";
@@ -390,6 +393,7 @@ function okra_settings_save() {
 		"key" => sanitize_text_field($_POST["key"]),
 		"token" => sanitize_text_field($_POST["token"]),
 		"callback_url" => sanitize_text_field($_POST["callback_url"]),
+		"corporate" => sanitize_text_field($_POST["corporate"])
 	);
 
 	$count = sizeof($wpdb->get_results("SELECT * FROM `" . $wpdb->prefix . "okra_settings`"));
@@ -516,6 +520,7 @@ function okra_settings_update() {
 		"key" => sanitize_text_field($_POST["key"]),
 		"token" => sanitize_text_field($_POST["token"]),
 		"callback_url" => sanitize_text_field($_POST["callback_url"]),
+		"corporate" => sanitize_text_field($_POST["corporate"])
 	);
 
 	$wpdb->update($wpdb->prefix . "okra_settings", $array, array($id = $_POST["id"]));
