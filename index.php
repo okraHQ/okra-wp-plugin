@@ -31,12 +31,8 @@ register_uninstall_hook(__FILE__, "okra_deactivate_plugin");
 add_action("admin_init", "okra_admin_init");
 add_action("admin_menu", "okra_admin_menu");
 add_action("admin_enqueue_scripts", "okra_enqueue_scripts");
-add_action("admin_post_okra_settings_save", "okra_settings_save");
-add_action("admin_post_okra_styles_save", "okra_styles_save");
 add_action("admin_post_okra_form_single_save", "okra_form_single_save");
 add_action("admin_post_okra_form_single_create", "okra_form_single_create");
-add_action("admin_post_okra_settings_update", "okra_settings_update");
-add_action("admin_post_okra_integration_create", "okra_integration_create");
 
 //Shortcodes
 add_shortcode("okra_modal", "okra_modal_shortcode");

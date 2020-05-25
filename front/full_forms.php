@@ -14,7 +14,7 @@
                     <table class="table table-striped text-center">
                         <thead>
                         <tr>
-                            <th>Shortcode Id</th>
+                            <th>Shortcode</th>
                             <th>Shortcode call</th>
                             <th>Name</th>
                             <th>Page</th>
@@ -29,7 +29,7 @@
                                 ?>
 
                                 <tr>
-                                    <td><?php echo $form->id ?></td>
+                                    <td><?php echo $form->short_code ?></td>
                                     <td>[okra_modal id=<?php echo $form->id ?> btn-text="xyz"]</td>
                                     <td><?php echo $form->name ?></td>
                                     <td><?php echo $form->page ?></td>

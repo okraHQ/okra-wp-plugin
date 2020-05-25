@@ -24,41 +24,14 @@
 						</select>
 					</div>
 					<span></span>
-					<div class="mb-2">Products</div>
-					<div class="mb-2 form-check-inline">
-						<?php echo $product_checked ?>
+					<div class="form-group">
+						<label for="short_code">Short URL</label>
+						<input class="form-control" type="text" name="short_code" id="short_code" placeholder="Short URL" />
 					</div>
-				</div>
-
-				<div class="bg-white card-body mt-4">
-					<div class="form-group mt-3">
-						<label for="onClose">On Close</label>
-						<textarea row="5"  name="onClose" id="onClose" class="form-control okra-editor"></textarea>
-					</div>
-					<div class="form-group mt-3">
-						<label for="onOpen">On Open</label>
-						<textarea row="5" name="onOpen" id="onOpen" class="form-control okra-editor"></textarea>
-					</div>
-					<div class="form-group mt-3">
-						<label for="beforeOpen">Before Open</label>
-						<textarea row="5" name="beforeOpen"   id="beforeOpen" class="form-control okra-editor"></textarea>
-					</div>
-					<div class="form-group mt-3">
-						<label for="beforeClose">Before Close</label>
-						<textarea row="5" name="beforeClose" id="beforeClose" class="form-control okra-editor"></textarea>
-					</div>
-					<div class="form-group mt-3">
-						<label for="onSuccess">on Success</label>
-						<textarea row="5" name="onSuccess" id="onSuccess" class="form-control okra-editor"></textarea>
-					</div>
-					<div class="form-group mt-3">
-						<label for="onFailure">on Failure</label>
-						<textarea row="5" name="onFailure" id="onFailure" class="form-control okra-editor"></textarea>
-					</div>
-
 					<div class="mt-3">
 						<button class="btn btn-primary">Submit</button>
 					</div>
+				
 				</div>
 			</form>
 		</div>
