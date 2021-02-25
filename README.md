@@ -17,12 +17,12 @@ You can also find them on the [apps page](https://dash.okra.ng/links) of the okr
 
 1. Click on the `Add New` Button on top of the table
 2. Fill in the infomation
-|Name                   | Description         
-|-----------------------|-----------------------------------------------------------|
-|  `Name `              | Name of the button (This is just for idenitification).
-|  `Page`               | Page you want to use the widget on 
-|  `Short Url`          | Your app short url
-|  `Button Text`        | Name of the customer using the widget on the application    
+Name | Description         
+---|---
+`Name ` | Name of the button (This is just for idenitification).
+`Page` | Page you want to use the widget on 
+`Short Url` | Your app short url
+`Button Text` | Name of the customer using the widget on the application    
 3. Click `Submit`
 
 ## Data Dictionary
