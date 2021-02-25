@@ -26,7 +26,7 @@
 						
 					 <script type='text/javascript'>
 					 const script = document.createElement('script');
-					 script.src = 'https://cdn.okra.ng/v1/bundle.js';
+					 script.src = 'https://cdn.okra.ng/v2/bundle.js';
 					 document.getElementsByTagName('head')[0].appendChild(script);	
 					
 						var btn = document.querySelector('.okra');
