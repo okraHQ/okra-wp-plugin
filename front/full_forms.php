@@ -30,7 +30,7 @@
 
                                 <tr>
                                     <td><?php echo $form->short_code ?></td>
-                                    <td>[okra_modal id=<?php echo $form->id ?> btn-text="xyz"]</td>
+                                    <td>[okra_modal id=<?php echo $form->id ?> btn-text=<?php echo $form->btn_text ?>]</td>
                                     <td><?php echo $form->name ?></td>
                                     <td><?php echo $form->page ?></td>
                                     <td>

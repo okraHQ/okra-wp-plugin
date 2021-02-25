@@ -4,12 +4,11 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 
 ## Installation
 
-1. Install the [Okra wordpress plugin](https://wordpress.org/plugins/okra/) via the Plugins section of your WordPress Dashboard or 
-   pull down the repo and zip the `okra-dev-wp` folder.
+1. Click on code and download repo (zip).
    
-2. Go to `Plugins > Add New` and search for the okra plugin, if you have pulled and zipped the repo click on the `upload button` at the top of the page, select the zipped repo and click `install now`.
+2. Go to `Plugins > Add New` and and click on the `Upload Button` at the top of the page, select the zipped repo and click `Install Now`, then click `Activate Plugin` the plugin.
 
-3. The menu `Okra` would appear on the side menu, with the menus **All Forms**, **Settings**, **Styles**, **Payment Integration**.
+3. The menu `Okra` would appear on the side menu with a blank Table.
 
   - **All Forms** <br />
 This allows you to create various instances of an element that when clicked, would call the okra widget.

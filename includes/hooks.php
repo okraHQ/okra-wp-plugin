@@ -15,6 +15,7 @@ function okra_activate_plugin() {
 				`created` DATETIME DEFAULT CURRENT_TIMESTAMP,
 				`name` VARCHAR(255) NOT NULL DEFAULT '',
 				`page` VARCHAR(255) NOT NULL DEFAULT '',
+				`btn_text` VARCHAR(50) NOT NULL DEFAULT 'Connect Your Account',
 				`short_code` VARCHAR(50) NOT NULL DEFAULT ''
 			)
 		";
@@ -147,11 +148,13 @@ function okra_form_single_save() {
 		//echo $id;
 		$name = sanitize_text_field($_POST["name"]);
 		$page = sanitize_text_field($_POST["page"]);
+		$btn_text = sanitize_text_field($_POST["btn_text"]);
 		$short_code = sanitize_text_field($_POST["short_code"]);
 
 		$array = array(
 			"name" => $name,
 			"page" => $page,
+			"btn_text"=>$btn_text,
 			"short_code" => $short_code
 		);
 
@@ -167,10 +170,12 @@ function okra_form_single_create() {
 		global $wpdb;
 		$name = sanitize_text_field($_POST["name"]);
 		$page = sanitize_text_field($_POST["page"]);
+		$btn_text = sanitize_text_field($_POST["btn_text"]);
 		$short_code = sanitize_text_field($_POST["short_code"]);
 		$array = array(
 			"name" => $name,
 			"page" => $page,
+			"btn_text"=>$btn_text,
 			"short_code" => $short_code
 		);
 

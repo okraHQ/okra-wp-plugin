@@ -19,9 +19,13 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="short_code">Name</label>
+                        <label for="short_code">Short Code</label>
                         <input class="form-control" value="<?php echo $form->short_code ?>" type="text" name="short_code" id="short_code" placeholder="Short URL" />
                     </div>
+                    <div class="form-group">
+						<label for="btn_text">Button Text</label>
+						<input class="form-control" value="<?php echo $form->btn_text ?>"  type="text" name="btn_text" id="btn_text" placeholder="Button Text" />
+					</div>
                     <div class="mt-3">
                         <button class="btn btn-primary">Submit</button>
                     </div>

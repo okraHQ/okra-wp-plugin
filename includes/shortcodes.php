@@ -22,7 +22,7 @@
 				<div id='okra-enabled'>
 
 										
-					<button class='okra'>". $attr["btn-text"] ."</button>
+					<button class='okra'>". $modal->btn_text ."</button>
 						
 					 <script type='text/javascript'>
 					 const script = document.createElement('script');
