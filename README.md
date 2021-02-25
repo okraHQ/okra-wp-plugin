@@ -10,29 +10,20 @@ Welcome to the Okra wordpress plugin repository on GitHub. Here you can browse t
 
 3. The menu `Okra` would appear on the side menu with a blank Table.
 
-  - **All Forms** <br />
-This allows you to create various instances of an element that when clicked, would call the okra widget.
- 
- ![All forms page](https://i.imgur.com/mtVUZ89.png)
-   
-  - **Settings**
-  ![All forms page](https://i.imgur.com/0wcOiew.png)
-      
-|Name                   | Type           | Required            | Default Value       | Description         |
-|-----------------------|----------------|---------------------|---------------------|---------------------|
-|  `key `               | `String`       | true                |  undefined          | Your public key from Okra.
-|  `token`              | `String`       | true                |  undefined          | Your pubic Key from okra. Use test key for test mode and live key for live mode
-|  `env`                | `Enums.Environment`| true            |  undefined          | 
-|  `clientName`         | `String`       | true                |  undefined          | Name of the customer using the widget on the application    
 
-  - **Styles** <br />
-  This is used to style the okra widget to your taste:
-  ![style page](https://i.imgur.com/J0l7QXA.png)
-  
-  
-  - **Payment Integration**
+## Usage
+To use the Okra Plugin, you must have generated a short url from the [app builder](https://dash.okra.ng/link-builder) on the okra dashboard.
+You can also find them on the [apps page](https://dash.okra.ng/links) of the okra dashboard 
 
-4. Add the form element created in `All forms` as an element in the wordpress page created.
+1. Click on the `Add New` Button on top of the table
+2. Fill in the infomation
+|Name                   | Description         
+|-----------------------|---------------------------------------------------------|
+|  `Name `              | Name of the button (This is just for idenitification).
+|  `Page`               | Page you want to use the widget on 
+|  `Short Url`          | Your app short url
+|  `Button Text`        | Name of the customer using the widget on the application    
+3. Click `Submit`
 
 ## Data Dictionary
 
